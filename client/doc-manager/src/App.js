@@ -1,14 +1,28 @@
-import './App.css';
-import FileVersions from './FileVersions'
 
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './LoginPage';
+import FileVersions from './FileVersions';
+import DashboardPage from './DashboardPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <FileVersions />
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Routes>
+            <Route
+              path="/"
+              element={<LoginPage />}
+            />
+
+            <Route path="/file-versions" element={<FileVersions />} />
+            <Route path="/dashboard"  element={<DashboardPage />}  />
+          </Routes>
+        </header>
+      </div>
+    </Router>
   );
 }
 

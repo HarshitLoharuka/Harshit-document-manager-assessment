@@ -1,0 +1,51 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .dashboard-upload,
+  .dashboard-retrieve {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .dashboard-upload {
+    background-color: lightblue;
+  }
+  
+  .dashboard-retrieve {
+    background-color: lightgreen;
+  }
+  
+  .dashboard-upload h2,
+  .dashboard-retrieve h2 {
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-retrieve select,
+  .dashboard-retrieve button {
+    margin-top: 10px;
+  }
+  
+  .dashboard-retrieve button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard-retrieve button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
